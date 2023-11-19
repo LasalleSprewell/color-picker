@@ -6,13 +6,3 @@ padding: 20px;
 background: grey;
 
 }
-ul a{
-    list-style: none;
-    text-decoration: none;
-    display: block;
-    align-items: center;
-    justify-items: center;
-    font-size: 25px;
-    color: lightblue;
-    background-color: lightgrey;
-}
