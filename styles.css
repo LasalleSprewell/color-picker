@@ -1,8 +1,19 @@
-.container-fluid {
-display: flex;
-flex-direction: row;
-margin: 0;
-padding: 20px;
-background: grey;
-
+* {
+    border: 1px solid red;
+body{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    height: 50px;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+}
+ul a{
+    text-decoration: none;
 }
