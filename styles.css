@@ -48,6 +48,12 @@ a:hover {
 a.active {
     color: rgb(87, 163, 187);
 }
+main {
+    padding: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 button {
     background-color: transparent;
