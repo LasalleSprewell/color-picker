@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-});
+})
+// Page background changes based off of the colors in the simpleColors list
 const color = document.getElementById("color");
 const simpleColors = ["red","green","blue","purple","orange","yellow"];
 const simpleButton = document.getElementById("btn-simple");
@@ -28,10 +29,9 @@ function simpleRandom() {
     return Math.floor (Math.random() * simpleColors.length);
 }
 
-
+// Page background changes to two different hex codes to create a gradient
 const color1 = document.getElementById("color1");
 const color2 = document.getElementById("color2");
-
 const gradButton = document.getElementById("btn-gradient");
 gradButton.addEventListener("click", function(){
     const gradientVal = gradient()
@@ -39,7 +39,7 @@ gradButton.addEventListener("click", function(){
     color1.textContent = getRandomHexCode();
     color2.textContent = getRandomHexCode();
 });
-
+// Creates random hexcode
 function getRandomHexCode() {
     const characters = '0123456789ABCDEF';
     let hexCode = '#';
@@ -50,7 +50,7 @@ function getRandomHexCode() {
 
     return hexCode;
 };
-
+//Creates gradient and uses while loop to make sure each color is different
 function gradient() {
     let color1 = getRandomHexCode();
     let color2 = getRandomHexCode();
