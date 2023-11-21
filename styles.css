@@ -4,6 +4,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    transition: .6s;
 }
 
 nav {
@@ -14,7 +15,7 @@ nav {
 }
 
 .nav-container {
-    background-color: aqua;
+    background-color: lightgrey;
     height: 100%;
     display: flex;
     align-items: center;
@@ -47,4 +48,17 @@ a:hover {
 
 a.active {
     color: black;
+}
+button {
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 5px solid black;
+
+}
+button:hover {
+    color: white;
+    border: 5px solid white;
 }
