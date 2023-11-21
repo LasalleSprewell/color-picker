@@ -1,21 +1,38 @@
-* {
+/* * {
     border: 1px solid red;
-}
-body {
-    padding: 0;
+} */
+body, html {
+    height: 100%;
     margin: 0;
 }
+
 nav {
-    display:block;
+    display: block;
     background-color: green;
-    height: 90px;
-    
+    height: 100px;
+    box-shadow: 0 10px 3px rgba(0, 0, 0, 0.12);
 }
-ul {
+
+.nav-container {
+    background-color: aqua;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
     list-style: none;
-    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 50px;
     
 }
 
@@ -23,9 +40,11 @@ li a {
     text-decoration: none;
     color: white;
 }
-li:hover {
+
+a:hover {
     color: red;
 }
-li:active {
-    color: green;
+
+a.active {
+    color: black;
 }
